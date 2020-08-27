@@ -1,0 +1,49 @@
+html * {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.headHero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  overflow: hidden;
+
+  @media (max-width: 480px) {
+    background-image: url("./images/bg3.jpg");
+    background-size: cover;
+  }
+
+  .textBox {
+    height: 140px;
+    text-align: center;
+  }
+  .bigTitle {
+    font-size: 100px;
+    color: #fdeded;
+    // font-family: "Allura", cursive;
+    font-family: "Parisienne", cursive;
+    span {
+      color: lightcoral;
+    }
+  }
+  .subText {
+    color: lightcoral;
+    font-size: 25px;
+    font-family: "Red Rose", cursive;
+    position: relative;
+    top: -20px;
+  }
+}
