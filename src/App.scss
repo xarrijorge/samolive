@@ -21,11 +21,6 @@ body {
   background-position-x: center;
   overflow: hidden;
 
-  @media (max-width: 480px) {
-    background-image: url("./images/bg3.jpg");
-    background-size: cover;
-  }
-
   .textBox {
     height: 140px;
     text-align: center;
@@ -45,5 +40,19 @@ body {
     font-family: "Red Rose", cursive;
     position: relative;
     top: -20px;
+  }
+  @media (max-width: 480px) {
+    background-image: url("./images/bg3.jpg");
+    background-size: cover;
+    .bigTitle {
+      font-size: 60px;
+      span {
+        color: crimson;
+      }
+    }
+    .subText {
+      font-size: 20px;
+      color: #fff;
+    }
   }
 }
