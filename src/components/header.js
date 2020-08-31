@@ -2,6 +2,8 @@ import React from "react"
 
 const Header = () => (
   <div className="headHero">
+    <div className="overlay"></div>
+    <div className="wraperLeft"></div>
     <div className="textBox">
       <h1 className="animate__animated animate__slideInUp bigTitle">
         Samuel <span>&</span> Olivia
@@ -10,6 +12,7 @@ const Header = () => (
         <span>20.12.2020</span> - Soryaa Beach Resort
       </h4>
     </div>
+    <div className="wraperRight"></div>
   </div>
 )
 

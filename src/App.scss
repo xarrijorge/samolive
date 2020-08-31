@@ -1,4 +1,3 @@
-@import "~/animate/animate.css";
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&family=Red+Rose:wght@300&display=swap");
 html * {
   box-sizing: border-box;
@@ -14,14 +13,38 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/bg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  overflow: hidden;
+
+  .overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: linen;
+    background-image: url("../src//images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -150px;
+    z-index: -100;
+    filter: grayscale(95%);
+  }
+
+  .wraperLeft {
+    width: 200px;
+    height: 320px;
+    background-image: url("../src/images/wed2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale(100%);
+  }
+  .wraperRight {
+    width: 200px;
+    height: 320px;
+    background-image: url("../src/images/wed3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale(100%);
+  }
 
   .textBox {
     height: 140px;
@@ -29,7 +52,7 @@ body {
   }
   .bigTitle {
     font-size: 100px;
-    color: #fdeded;
+    color: cornflowerblue;
     // font-family: "Allura", cursive;
     font-family: "Parisienne", cursive;
     span {
