@@ -1,7 +1,7 @@
 import React from "react"
 
 const RSVP = () => (
-  <form className="rsvpForm" netlify>
+  <form className="rsvpForm" name="contact" method="POST" data-netlify="true">
     <label htmlFor="name">
       <input type="text" name="name" placeholder="Full Name" />
     </label>
