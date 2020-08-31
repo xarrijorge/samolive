@@ -50,21 +50,21 @@ a {
     text-align: center;
     display: flex;
     align-items: center;
-    .wraperLeft {
+
+    .wraper {
       width: 200px;
       height: 320px;
-      background-image: url("../src/images/wed2.png");
       background-repeat: no-repeat;
       background-position: center center;
+      background-size: contain;
       // filter: grayscale(100%);
-    }
-    .wraperRight {
-      width: 200px;
-      height: 320px;
-      background-image: url("../src/images/wed3.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      // filter: grayscale(100%);
+
+      &.left {
+        background-image: url("../src/images/wed2.png");
+      }
+      &.right {
+        background-image: url("../src/images/wed3.png");
+      }
     }
   }
   .bigTitle {
@@ -78,7 +78,7 @@ a {
     font-size: 25px;
     font-family: "Red Rose", cursive;
     position: relative;
-    top: -20px;
+    // top: -20px;
   }
 
   .rsvpButton {
@@ -95,7 +95,7 @@ a {
     }
   }
   @media (max-width: 480px) {
-    margin-top: -100px;
+    margin-top: -80px;
     .firstImage {
       width: 100px;
       height: 100px;
@@ -111,10 +111,21 @@ a {
       width: 100px;
       height: 40px;
       font-size: 20px;
-      margin-top: -50px;
+      margin-top: -20px;
     }
-    .textBox {
-      height: 200px;
+    .subText {
+      color: lightcoral;
+      font-size: 16px;
+    }
+    .wraper {
+      &.left {
+        position: relative;
+        left: 70px;
+      }
+      &.right {
+        position: relative;
+        right: 70px;
+      }
     }
   }
 }

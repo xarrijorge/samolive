@@ -5,7 +5,7 @@ const Header = () => (
   <div className="headHero">
     <div className="firstImage"></div>
     <div className="textBox">
-      <div className="wraperLeft"></div>
+      <div className="wraper left"></div>
       <div>
         <h1 className="animate__animated animate__fadeInUp animate__delay-2s bigTitle">
           Samuel <span>&</span> Olivia
@@ -14,7 +14,7 @@ const Header = () => (
           <span>December 20, 2020</span> - Soryah Beach Resort
         </h4>
       </div>
-      <div className="wraperRight"></div>
+      <div className="wraper right"></div>
     </div>
     <button className="animate__animated animate__pulse animate__infinite rsvpButton">
       <Link to="/contact">RSVP</Link>
