@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 const ContactPage = () => (
   <div className="contactPage">
     <SEO title="Page two" />
+    <div className="imgBox"></div>
     <RSVP />
     <Link to="/" className="goHome">
       Home
