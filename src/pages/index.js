@@ -1,6 +1,6 @@
 import React, { Fragment } from "react"
 
-import Header from "../components/header"
+import Header, { Page } from "../components/header"
 import SEO from "../components/seo"
 
 import "../animate.css"
@@ -10,6 +10,7 @@ const IndexPage = () => (
   <Fragment>
     <SEO title="Home" />
     <Header />
+    <Page />
   </Fragment>
 )
 

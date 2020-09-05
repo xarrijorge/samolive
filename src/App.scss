@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&family=Red+Rose:wght@300&display=swap");
 :root {
+  --background: linen;
   --purple: #9b59b6;
   --silver: #ecf0f1;
+  --red: lightcoral;
+  --green: #39d139;
+  --black: #141414;
 }
 html * {
   box-sizing: border-box;
@@ -13,7 +17,7 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background-color: linen;
+  background-color: var(--background);
 }
 button {
   border: none;
@@ -28,11 +32,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: linen;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  overflow: hidden;
+  background-color: var(--background);
 
   .firstImage {
     width: 200px;
@@ -57,7 +57,6 @@ a {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
-      // filter: grayscale(100%);
 
       &.left {
         background-image: url("../src/images/wed2.png");
@@ -70,16 +69,14 @@ a {
   .bigTitle {
     font-size: 100px;
     color: var(--purple);
-    // font-family: "Allura", cursive;
     font-family: "Parisienne", cursive;
     font-weight: 100;
   }
   .subText {
-    color: lightcoral;
+    color: var(--red);
     font-size: 25px;
     font-family: "Red Rose", cursive;
     position: relative;
-    // top: -20px;
   }
 
   .rsvpButton {
@@ -92,7 +89,7 @@ a {
     font-family: "Red Rose", cursive;
 
     a {
-      color: linen;
+      color: var(--background);
     }
   }
   @media (max-width: 480px) {
@@ -133,7 +130,7 @@ a {
 
 .contactPage {
   width: 100%;
-  height: 100vh;
+  height: 99vh;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -219,4 +216,38 @@ a {
   bottom: 10%;
   right: 10%;
   font-size: 25px;
+}
+
+.lovePage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .pageSubIcon {
+    width: 10em;
+  }
+  .bioBox {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 200px;
+    .loveIcon {
+      position: absolute;
+    }
+    .bio {
+      padding: 0 20px;
+    }
+    .profilePic {
+      border: 1px solid lightsalmon;
+    }
+
+    * {
+      margin: 5px;
+    }
+  }
+
+  @media (max-width: 480px) {
+  }
 }
