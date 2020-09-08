@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import subIcon from "../images/wed10.png"
+import SamPic from "../images/samProfile.jpg"
+import olivePic from "../images/oliveaProfile.jpg"
 
 const Header = () => (
   <div className="headHero">
@@ -27,31 +29,27 @@ const Page = () => (
   <div className="lovePage">
     <h1>Story of Love</h1>
     <img src={subIcon} alt="" className="pageSubIcon" />
-    <h4>
-      When you find the one person you can't live without. your soul mate thinks
-      of you & only you. When you are talking to each other, you say the same
-      thing without knowing it.
-    </h4>
-    <div className="bioBox">
-      <div className="bio">
-        <h3 className="title">Samuel Deputy</h3>
-        <div className="content">
-          We met through a mutual friend at the end of our freshman year in
-          college at Georgia. I noticed her eyes, and how outgoing she was.
+    <div className="scriptureBox">
+      <blockquote className="scripture">
+        Then he answered and spake unto me, saying, this is the word of the Lord
+        unto Zerubbabel, saying, not by might, nor by power, but by my spirit,
+        saith the Lord of hosts.
+        <p>* Zechariah 4 : 6</p>
+      </blockquote>
+    </div>
+    <div className="profileBox">
+      <div className="imageDiv samuel">
+        <div className="bio">
+          <p>Samuel Deputy</p>
+          <p>19.10.1992</p>
         </div>
+        <img src={SamPic} alt="Samuel smiling" />
       </div>
-      <div className="profilePic">
-        <img src="#" alt="" />
-      </div>
-      <span className="loveIcon"></span>
-      <div className="profilePic">
-        <img src="#" alt="" />
-      </div>
-      <div className="bio">
-        <h3 className="title">Olivia Gibson</h3>
-        <div className="content">
-          We did meet through a mutual friend at the end of our first year in
-          college at Georgia. We got along really well and clicked instantly.
+      <div className="imageDiv olivia">
+        <img src={olivePic} alt="olivia in an african print dress" />
+        <div className="bio">
+          <p>Olivia Gibson</p>
+          <p>19.10.1992</p>
         </div>
       </div>
     </div>
