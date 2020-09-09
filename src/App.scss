@@ -9,15 +9,22 @@
 }
 html * {
   box-sizing: border-box;
-  overflow: hidden;
   font-family: "Red Rose", cursive;
 }
 body {
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
+}
+.container {
+  overflow: scroll;
+  height: 100vh;
+  width: 100vw;
   background-color: var(--background);
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+
+  .child {
+    scroll-snap-align: start;
+  }
 }
 button {
   border: none;
@@ -79,19 +86,6 @@ a {
     position: relative;
   }
 
-  .rsvpButton {
-    width: 150px;
-    height: 50px;
-    background-color: var(--purple);
-    border-radius: 10px;
-    font-size: 40px;
-    color: var(--silver);
-    font-family: "Red Rose", cursive;
-
-    a {
-      color: var(--background);
-    }
-  }
   @media (max-width: 480px) {
     margin-top: -80px;
     .firstImage {
@@ -104,12 +98,6 @@ a {
     .subText {
       font-size: 16px;
       color: var(--silver);
-    }
-    .rsvpButton {
-      width: 100px;
-      height: 40px;
-      font-size: 20px;
-      margin-top: -20px;
     }
     .subText {
       color: lightcoral;
@@ -304,5 +292,24 @@ a {
         }
       }
     }
+  }
+}
+.rsvpButton {
+  width: 150px;
+  height: 50px;
+  background-color: var(--purple);
+  border-radius: 10px;
+  font-size: 40px;
+  color: var(--silver);
+  font-family: "Red Rose", cursive;
+
+  a {
+    color: var(--background);
+  }
+  @media (max-width: 780px) {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: -20px;
   }
 }

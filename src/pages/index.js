@@ -7,11 +7,11 @@ import "../animate.css"
 import "../App.scss"
 
 const IndexPage = () => (
-  <Fragment>
+  <div className="container">
     <SEO title="Home" />
     <Header />
     <Page />
-  </Fragment>
+  </div>
 )
 
 export default IndexPage
