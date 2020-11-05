@@ -43,10 +43,10 @@ const Page = () => (
           <p>Samuel Deputy</p>
           <p>19.10.1992</p>
         </div>
-        <img src={SamPic} alt="Samuel smiling" />
-      </div>
-      <div className="imageDiv olivia animate__animated animate__fadeInRight animate__delay-3s">
-        <img src={olivePic} alt="olivia in an african print dress" />
+        <div className="picBox">
+          <img src={SamPic} alt="Samuel smiling" />
+          <img src={olivePic} alt="olivia in an african print dress" />
+        </div>
         <div className="bio">
           <p>Olivia Gibson</p>
           <p>19.10.1992</p>

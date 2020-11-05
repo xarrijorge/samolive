@@ -29,43 +29,18 @@ const RSVP = () => {
       .catch(error => alert(error))
   }
   return (
-    <form
-      className="rsvpForm"
-      name="RSVP"
-      method="POST"
-      data-netlify="true"
-      data-netlify-recaptcha="true"
-    >
-      <input type="hidden" name="form-name" value="RSVP" />
-      <label htmlFor="name">
-        <input
-          type="text"
-          name="name"
-          placeholder="Full Name"
-          onChange={handleChange}
-        />
-      </label>
-      <label htmlFor="contact">
-        <input
-          type="text"
-          name="contact"
-          placeholder="Contact Number"
-          onChange={handleChange}
-        />
-      </label>
-      <label htmlFor="guests">
-        <input
-          type="number"
-          min="1"
-          max="10"
-          name="guests"
-          placeholder="Number of Guests"
-          onChange={handleChange}
-        />
-      </label>
-
-      <button type="submit">Send</button>
-    </form>
+    <div className="rsvpForm">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSd2ewX8NK_X4a7rr6fqpYZAfLxRdabA2kVsTcb1SSzVTz6Nuw/viewform?embedded=true"
+        width="840"
+        height="2110"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+        Loading…
+      </iframe>
+    </div>
   )
 }
 
