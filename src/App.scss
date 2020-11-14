@@ -127,11 +127,10 @@ a {
     position: fixed;
     width: 50%;
     height: 101vh;
-    background-image: url("../src/images/bg3.jpg");
+    background-image: url("../src/images/ContactPic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 0;
-    filter: grayscale(80%);
+    filter: grayscale(60%);
   }
 
   .rsvpForm {
@@ -213,60 +212,14 @@ a {
       }
     }
   }
-  .profileBox {
-    display: flex;
-    width: 100vw;
-    padding-top: 0;
-    justify-content: center;
-
-    .imageDiv {
-      width: 40%;
-      display: flex;
-      justify-content: center;
-
-      .bio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 30%;
-        font-size: 25px;
-        font-weight: bold;
-        * {
-          margin: 5px 0;
-        }
-      }
-      img {
-        max-width: 50%;
-        margin: 10px 0;
-      }
-    }
-    @media (max-width: 780px) {
-      padding: 2%;
-      flex-direction: column;
-      align-items: center;
-      .imageDiv {
-        width: 90%;
-        flex-direction: column;
-        align-items: center;
-        &.samuel {
-          margin: 0;
-        }
-        .bio {
-          width: 60%;
-        }
-        img {
-          max-width: 80%;
-        }
-      }
-    }
-  }
+  
 }
 .rsvpButton {
   width: 150px;
-  height: 50px;
+  height: 45px;
   background-color: var(--purple);
   border-radius: 10px;
-  font-size: 40px;
+  font-size: 30px;
   color: var(--silver);
   font-family: "Red Rose", cursive;
 
@@ -278,5 +231,13 @@ a {
     height: 40px;
     font-size: 20px;
     margin-top: -20px;
+  }
+}
+
+.loveImageBox{
+  width: 60vw;
+  margin-bottom: 50px;
+  .lovePic{
+    max-width: 100%;
   }
 }

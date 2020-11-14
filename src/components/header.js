@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import subIcon from "../images/wed10.png"
-import SamPic from "../images/samProfile.jpg"
-import olivePic from "../images/oliveaProfile.jpg"
+import LovePic from "../images/LovePic.jpg"
 
 const Header = () => (
   <div className="headHero child">
@@ -37,21 +36,12 @@ const Page = () => (
         <p>* Zechariah 4 : 6</p>
       </blockquote>
     </div>
-    <div className="profileBox">
-      <div className="imageDiv samuel animate__animated animate__fadeInLeft animate__delay-2s">
-        <div className="bio">
-          <p>Samuel Deputy</p>
-          <p>19.10.1992</p>
-        </div>
-        <div className="picBox">
-          <img src={SamPic} alt="Samuel smiling" />
-          <img src={olivePic} alt="olivia in an african print dress" />
-        </div>
-        <div className="bio">
-          <p>Olivia Gibson</p>
-          <p>19.10.1992</p>
-        </div>
-      </div>
+    <div className="loveImageBox">
+      <img
+        className="lovePic"
+        src={LovePic}
+        alt="Samuel and Olivia standing side by side"
+      />
     </div>
   </div>
 )
