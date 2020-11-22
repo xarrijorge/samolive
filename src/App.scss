@@ -117,53 +117,20 @@ a {
 }
 
 .contactPage {
-    width: 100%;
-    height: 99vh;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 
     .imgBox {
-        position: fixed;
-        width: 50%;
-        height: 101vh;
-        background-image: url('../src/images/ContactPic.jpg');
-        background-repeat: no-repeat;
+        width: 50vw;
+        height: 100vh;
+        background-color: black;
+        background-image: url('./images/ContactPic.jpg');
+        background-position: center;
         background-size: cover;
-        filter: grayscale(60%);
-    }
-
-    .rsvpForm {
-        position: relative;
-        left: 52%;
-        // overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        width: 45%;
-        // margin-right: 150px;
-        // height: 80%;
-        // font-size: 25px;
-        iframe {
-            overflow-y: hidden;
-            height: 95vh;
-        }
-    }
-    @media (max-width: 480px) {
-        flex-direction: column;
-        .imgBox {
-            width: 100%;
-            height: 40vh;
-        }
-        .rsvpForm {
-            width: 100%;
-            height: 80vh;
-            // margin: 20px;
-            border: 1px solid red;
-        }
+        background-repeat: no-repeat;
     }
 }
-
 .goHome {
     position: fixed;
     bottom: 10%;
