@@ -256,6 +256,25 @@ a {
         text-align: justify;
         text-align-last: center;
     }
+    .ringSection {
+        width: 20%;
+        margin: 20px 0;
+        img {
+            width: 35px;
+            margin: 0;
+        }
+        p {
+            font-family: 'Parisienne', cursive;
+            font-size: 25px;
+            margin: 0;
+        }
+        @media (max-width: 780px) {
+            width: 60%;
+            p {
+                font-size: 20px;
+            }
+        }
+    }
 }
 .countdown {
     width: 100%;

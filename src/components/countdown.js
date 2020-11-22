@@ -1,6 +1,7 @@
 import React from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
 import subIcon from '../images/wed10.png'
+import RingIcon from '../images/ring.png'
 
 // Random component
 const Completionist = () => <p>You are good to go!</p>
@@ -41,6 +42,10 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
                         {zeroPad(seconds)}
                         <p className="text">seconds</p>
                     </div>
+                </div>
+                <div className="ringSection">
+                    <img src={RingIcon} alt="2 rings attached" />
+                    <p>Remaining days for our Wedding ceremony</p>
                 </div>
             </div>
         )
