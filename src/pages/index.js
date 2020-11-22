@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 
 import Header, { Page } from "../components/header"
+import CountDownTimer from '../components/countdown'
 import SEO from "../components/seo"
 
 import "../animate.css"
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Header />
     <Page />
+    <CountDownTimer/>
   </div>
 )
 

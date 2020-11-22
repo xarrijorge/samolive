@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import subIcon from "../images/wed10.png"
-import LovePic from "../images/LovePic.jpg"
-
+import LovePic from "../videos/teshach.mp4"
+import VidPoster from "../images/LovePic.jpg"
 const Header = () => (
   <div className="headHero child">
     <div className="firstImage"></div>
@@ -37,10 +37,13 @@ const Page = () => (
       </blockquote>
     </div>
     <div className="loveImageBox">
-      <img
+      <video
         className="lovePic"
+        poster={VidPoster}
         src={LovePic}
+        type="video/mp4"
         alt="Samuel and Olivia standing side by side"
+        controls
       />
     </div>
   </div>
