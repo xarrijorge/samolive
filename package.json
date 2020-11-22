@@ -23,7 +23,8 @@
     "react-scroll": "^1.8.1"
   },
   "devDependencies": {
-    "prettier": "2.1.0"
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.21.5"
   },
   "keywords": [
     "gatsby"

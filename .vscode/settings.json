@@ -1,0 +1,17 @@
+{
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "prettier.jsxBracketSameLine": true,
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "prettier.jsxSingleQuote": true,
+    "editor.detectIndentation": false,
+    "editor.wordWrap": "bounded",
+    "editor.autoIndent": "advanced",
+    "editor.codeActionsOnSave": null,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "prettier.requireConfig": true
+}
