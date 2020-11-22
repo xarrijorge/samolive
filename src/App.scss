@@ -237,6 +237,10 @@ a {
     .lovePic {
         max-width: 100%;
     }
+    @media (max-width: 780px) {
+        width: 90vw;
+        margin-bottom: 30px;
+    }
 }
 .countDownPage {
     padding: 50px;
@@ -244,8 +248,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     .pageSubIcon {
         width: 10em;
+    }
+    @media (max-width: 780px) {
+        text-align: justify;
+        text-align-last: center;
     }
 }
 .countdown {
@@ -254,23 +263,42 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 2em;
     text-align: center;
     font-weight: 500;
-}
-.timeBlock {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    padding: 10px;
-    height: 100px;
-    background-color: #fff;
-    margin: 0 20px;
-}
-.text {
-    font-size: 25px;
-    margin: 0 15px;
-    margin-top: 10px;
+
+    .timeBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        padding: 10px;
+        height: 100px;
+        background-color: #fff;
+        margin: 0 20px;
+    }
+    .text {
+        font-size: 25px;
+        margin: 0 15px;
+        margin-top: 10px;
+    }
+    @media (max-width: 780px) {
+        flex-direction: column;
+        height: 45vh;
+        .timeBlock {
+            width: 100px;
+            font-size: 1em;
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .text {
+            font-size: 22px;
+            margin: 5px;
+        }
+        .colon {
+            display: none;
+        }
+    }
 }
