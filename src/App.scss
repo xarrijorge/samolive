@@ -118,7 +118,7 @@ a {
 
 .contactPage {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center;
 
     .imgBox {
@@ -129,6 +129,24 @@ a {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .rsvpForm {
+        width: 50vw;
+        height: 100vh;
+    }
+    @media (max-width: 780px) {
+        justify-content: center;
+        align-items: center;
+        .imgBox {
+            width: 60px;
+            height: 60px;
+            margin: 20px;
+            visibility: hidden;
+        }
+        .rsvpForm {
+            width: 100vw;
+            margin-left: 20px;
+        }
     }
 }
 .goHome {

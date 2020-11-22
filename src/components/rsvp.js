@@ -14,13 +14,7 @@ const RSVP = () => {
         })
     }, [typeformRef])
 
-    return (
-        <div
-            className="rsvpForm"
-            ref={typeformRef}
-            // style={{ height: '100vh', width: '50vw' }}
-        ></div>
-    )
+    return <div className="rsvpForm" ref={typeformRef}></div>
 }
 
 export default RSVP
