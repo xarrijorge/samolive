@@ -13,7 +13,7 @@ const Header = () => (
                     Samuel <span>&</span> Olivia
                 </h1>
                 <h4 className="animate__animated animate__fadeInUp animate__delay-2s subText">
-                    <span>December 20, 2020</span> - Soryah Beach Resort
+                    <span>December 20, 2020</span> - Soorya Beach Resort
                 </h4>
             </div>
             <div className="wraper right"></div>
