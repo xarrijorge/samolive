@@ -17,7 +17,7 @@ function wedding() {
                 <blockquote>
                     “ Happy is the man who finds a true friend, and far happier
                     is he who finds that true friend in his wife.”
-                    <p className="author"> *Quote Author</p>
+                    <p className="author"> *Franz Schubert</p>
                 </blockquote>
             </div>
         </div>
