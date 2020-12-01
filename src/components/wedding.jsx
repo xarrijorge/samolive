@@ -7,9 +7,9 @@ function wedding() {
             <h1>The Wedding Day</h1>
             <div className="linksSection">
                 <p>
-                    Click the blue button below so see the Wedding Fact Sheet &
-                    the red buttons to learn the Wedding Song Dance for the
-                    wedding day
+                    Click the blue button below to see the Wedding Fact Sheet &
+                    the red buttons to learn the Song and dance for the
+                    reception
                 </p>
                 <button className="blue">
                     <a
