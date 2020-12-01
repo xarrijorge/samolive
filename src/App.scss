@@ -328,14 +328,17 @@ a {
         height: 40px;
         margin: 10px;
         border-radius: 15px;
-        font-size: 18px;
-        font-weight: 600;
-        color: #fff;
         &.red {
             background-color: #ff6584;
         }
         &.blue {
             background-color: #6c63ff;
+        }
+        a {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #fff;
         }
     }
     .quote {
