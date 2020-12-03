@@ -7,7 +7,7 @@ const RSVP = () => {
     const typeformRef = useRef(null)
 
     useEffect(() => {
-        typeformEmbed.makePopup(typeformRef.current, FormLink, {
+        typeformEmbed.makeWidget(typeformRef.current, FormLink, {
             hideFooter: true,
             hideHeaders: true,
             hideScrollbars: true,
